@@ -61,12 +61,9 @@ body {
 
 .cards__header {
 	font-size: 25px;
-	text-align: center; /* 
-	grid-column-start: 1;
-	grid-column-end: 3; */
+	text-align: center;  
 	padding: 20px;
-	font-weight: 900;
-	text-align: center
+	font-weight: 900; 
 }
 
 .cards__card {
@@ -88,7 +85,6 @@ body {
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: 100% bottom;
-	
 }
 
 .cards__card--small {
@@ -144,9 +140,9 @@ body {
 
 @media (min-width: 600px) {
 	.cards {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
-	.cards__card--big {
+	.cards__card--big, .cards__header { 
 		grid-column-start: 1;
 		grid-column-end: 3;
 	}
