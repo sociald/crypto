@@ -66,6 +66,7 @@ body {
 	grid-column-end: 3; */
 	padding: 20px;
 	font-weight: 900;
+	text-align: center
 }
 
 .cards__card {
@@ -87,7 +88,7 @@ body {
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: 100% bottom;
-	text-align: center
+	
 }
 
 .cards__card--small {
