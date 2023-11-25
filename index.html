@@ -1,168 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Cards</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Nunito&amp;display=swap'><link rel="stylesheet" href="./style.css">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Юридические услуги</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="first-screen">
+				<div class="first-screen__table-cell">
+					<h2 class="first-screen__title">
+						Консультация по ответу на запрос банка по 115 ФЗ
+					</h2>
+					<p class="first-screen__desc">
+						Если ваши средства или счёт, использованные для операций с
+						цифровыми финансовыми активами были заблокированы банком, то
+						мы дадим обширную консультацию по необходимым дальнейшим
+						действиям для возобновления доступа
+					</p>
+					<button class="first-screen__button">
+						Получить консультацию юриста
+					</button>
+				</div>
+				<div class="first-screen__table-cell--bg"></div>
+			</div>
+		</div>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<ul class="grid">
-	<li class="grid__item">
-		<div class="card card--primary">
-			<div class="card__top">
-				<span class="card__tag">
-					Avocado
-				</span>
-				<figure class="card__figure">
-					<img class="card__image" src="https://picsum.photos/id/37/400/300" width="400" height="300" />
-				</figure>
+		<div class="cards">
+			<div class="cards__header">
+				Индивидуальная юридическая консультация
 			</div>
-			<div class="card__bottom">
-				<h2 class="card__title">
-					Asian pear cherry rich coconut cream
-				</h2>
-				<p class="card__text">
-					Crunchy seaweed cranberry spritzer spiced peppermint blast zesty tofu pad thai summer
-				</p>
+			<div class="cards__card cards__card--big">
+				<h3 class="cards__card-title">
+					Консультация по ответу на запрос банка по 115 ФЗ
+				</h3>
 			</div>
-		</div>
-	</li>
-	<li class="grid__item">
-		<div class="card card--secondary card--reverse">
-			<div class="card__top">
-				<span class="card__tag">
-					Tofu
-				</span>
+			<div class="cards__card cards__card--small bg1">
+				<h3 class="cards__card-title">
+					Консультация по ответу на запрос банка по 115 ФЗ
+				</h3>
 			</div>
-			<div class="card__bottom">
-				<h2 class="card__title">
-					Scotch bonnet pepper leek picnic salad
-				</h2>
-				<p class="card__text">
-					Lemon tahini dressing vine tomatoes toasted hazelnuts ultra creamy avocado pesto
-				</p>
+			<div class="cards__card cards__card--small bg2">
+				<h3 class="cards__card-title">
+					Правовой аудит работы с криптовалютами
+				</h3>
+			</div>
+			<div class="cards__card cards__card--small bg3">
+				<h3 class="cards__card-title">
+					Договор купли-продажи криптовалюты
+				</h3>
+			</div>
+			<div class="cards__card cards__card--small bg4">
+				<h3 class="cards__card-title">
+					Консультации по уголовно-правовым рискам
+				</h3>
+			</div>
+			<div class="cards__card cards__card--big">
+				<h3 class="cards__card-title">
+					Индивидуальная юридическая консультация
+				</h3>
 			</div>
 		</div>
-	</li>
-	<li class="grid__item">
-		<div class="card card--tertiary">
-			<div class="card__top">
-				<span class="card__tag">
-					Kale
-				</span>
+
+		<footer class="footer">
+			<div class="footer__social">Телеграм бот</div>
+			<div class="footer__mail">
+				<h3 class="footer__mail">Написать @письмо</h3>
 			</div>
-			<div class="card__bottom">
-				<h2 class="card__title">
-					Farro platter chia seeds 
-				</h2>
-				<p class="card__text">
-					Artichoke hearts cherry bomb pepper green grapes maple orange
-				</p>
-			</div>
-		</div>
-	</li>
-	<li class="grid__item">
-		<div class="card card--primary">
-			<div class="card__top">
-				<span class="card__tag">
-					Pears
-				</span>
-				<figure class="card__figure">
-					<img class="card__image" src="https://picsum.photos/id/49/400/300" width="400" height="300" />
-				</figure>
-			</div>
-			<div class="card__bottom">
-				<h2 class="card__title">
-					Dark chocolate grenadillo Thai curry green papaya
-				</h2>
-				<p class="card__text">
-					Thai basil tacos açai cocoa shallots red pepper double dark chocolate naga viper
-				</p>
-			</div>
-		</div>
-	</li>
-	<li class="grid__item">
-		<div class="card card--secondary card--reverse">
-			<div class="card__top">
-				<span class="card__tag">
-					Peaches
-				</span>
-				<figure class="card__figure">
-					<img class="card__image" src="https://picsum.photos/id/77/400/300" width="400" height="300" />
-				</figure>
-			</div>
-			<div class="card__bottom">
-				<h2 class="card__title">
-					Cilantro lime vinaigrette
-				</h2>
-				<p class="card__text">
-					Fruit smash potato seeds pineapple salsa main course 
-				</p>
-			</div>
-		</div>
-	</li>
-	<li class="grid__item">
-		<div class="card card--tertiary">
-			<div class="card__top">
-				<span class="card__tag">
-					Pears
-				</span>
-				<figure class="card__figure">
-					<img class="card__image" src="https://picsum.photos/id/50/400/300" width="400" height="300" />
-				</figure>
-			</div>
-			<div class="card__bottom">
-				<h2 class="card__title">
-					Dark chocolate grenadillo Thai curry green papaya
-				</h2>
-				<p class="card__text">
-					Thai basil tacos açai cocoa shallots red pepper double dark chocolate naga viper
-				</p>
-			</div>
-		</div>
-	</li>
-	<li class="grid__item">
-		<div class="card card--secondary">
-			<div class="card__top">
-				<span class="card__tag">
-					Avocado
-				</span>
-				<figure class="card__figure">
-					<img class="card__image" src="https://picsum.photos/id/55/400/300" width="400" height="300" />
-				</figure>
-			</div>
-			<div class="card__bottom">
-				<h2 class="card__title">
-					Asian pear cherry rich coconut cream
-				</h2>
-				<p class="card__text">
-					Crunchy seaweed cranberry spritzer spiced peppermint blast zesty tofu pad thai summer
-				</p>
-			</div>
-		</div>
-	</li>
-	<li class="grid__item">
-		<div class="card card--primary card--reverse">
-			<div class="card__top">
-				<span class="card__tag">
-					Tofu
-				</span>
-			</div>
-			<div class="card__bottom">
-				<h2 class="card__title">
-					Scotch bonnet pepper leek picnic salad
-				</h2>
-				<p class="card__text">
-					Lemon tahini dressing vine tomatoes toasted hazelnuts ultra creamy avocado pesto
-				</p>
-			</div>
-		</div>
-	</li>
-</ul>
-<!-- partial -->
-  
-</body>
+		</footer>
+	</body>
 </html>

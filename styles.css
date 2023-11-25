@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.wrapper {
+	background: linear-gradient(
+		180deg,
+		rgba(200, 187, 254, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+
+.first-screen {
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	line-height: 300%;
+}
+
+.first-screen__table-cell--bg {
+	background: url('./images/undraw_Bitcoin_re_urgq.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.first-screen__title {
+	font-size: 60px;
+	font-weight: 900;
+}
+
+.first-screen__desc {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.first-screen__button {
+	background-color: #c8bbfe;
+	display: block;
+	padding: 15px 25px;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+}
+
+.first-screen__button:hover {
+	background-color: #bdaef9;
+}
+
+.cards {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+.cards__header {
+	font-size: 25px;
+	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	padding: 20px;
+}
+ 
+
+.cards__card {
+	background-color: #e5dfff;
+	border-radius: 20px;
+	padding: 20px 40px;
+	min-height: 200px;
+	position: relative;
+	overflow: hidden;
+	transition: 100ms;
+}
+
+.cards__card:hover {
+	background-color: #bdaef9;
+}
+
+.cards__card-title {
+	z-index: 2;
+}
+
+/* .bg1 {
+	background-image: url('./images/undraw_New_message_re_fp03.svg');
+}
+
+.bg2 {
+	background-image: url('./images/undraw_Dev_productivity_re_fylf.svg');
+}
+
+.bg3 {
+	background-image: url('./images/undraw_Businessman_re_mlee.svg');
+}
+
+.bg4 {
+	background-image: url('./images/undraw_businessman_re_mlee.svg');
+} */
+
+.cards__card--small::after {
+	content: '';
+	display: block;
+	position: absolute;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	width: 50%;
+	height: 100%;
+	top: 20%;
+	right: 0;
+	background: url('./images/undraw_businessman_re_mlee.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.cards__card--big {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.cards__card--big::after {
+	content: '';
+	display: block;
+	position: absolute;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	width: 50%;
+	height: 100%;
+	top: 20%;
+	right: 0;
+	background: url('./images/undraw_reminder_re_fe15.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.footer {
+	margin: 20px auto 0 auto;
+	background-color: #7e6ace;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	border-radius: 20px 20px 0 0; 
+}
+
+.footer__social {
+	padding: 20px;
+
+}
+
+.footer__mail {
+	position: relative;
+	padding: 20px;
+}
+
+.footer__mail::after {
+	content: '';
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	height: 80%;
+	width: 100%;
+	background: url('./images/mail.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@media (max-width: 600px) {
+	.cards { 
+		grid-template-columns: 1fr;
+	}
+}
