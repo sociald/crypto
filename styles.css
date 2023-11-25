@@ -87,6 +87,7 @@ body {
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: 100% bottom;
+	text-align: center
 }
 
 .cards__card--small {
