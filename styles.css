@@ -21,6 +21,23 @@ body {
 
 	display: grid;
 	grid-template-columns: 1fr;
+	gap: 50px;
+}
+
+.first-screen__table-cell--bg {
+	min-height: 200px;
+	background: url('./images/undraw_Bitcoin_re_urgq.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@media (min-width: 1000px) {
+	.first-screen {
+		width: 70%;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
 }
 
 .first-screen__title {
@@ -33,12 +50,10 @@ body {
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 120%;
-	padding-bottom: 200px;
 
-	background-image: url('./images/undraw_bitcoin_re_urgq.svg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	background-position: center 160px; 
+	background-position: center 160px;
 }
 
 .first-screen__button {
@@ -65,18 +80,25 @@ body {
 	gap: 10px;
 }
 
+@media (min-width: 1000px) {
+	.cards {
+		grid-template-columns: 1fr 1fr;
+		width: 70%;
+	}
+}
+
 .cards__header {
 	font-size: 25px;
-	text-align: center;  
+	text-align: center;
 	padding: 20px;
-	font-weight: 900; 
+	font-weight: 900;
 }
 
 .cards__card {
 	background-color: #e5dfff;
 	border-radius: 20px;
 	padding: 20px 40px;
-	min-height: 200px; 
+	min-height: 200px;
 	overflow: hidden;
 	transition: 100ms;
 	font-size: 25px;
@@ -94,7 +116,6 @@ body {
 }
 
 .cards__card--small {
-
 	background-image: url('./images/undraw_businessman_re_mlee.svg');
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
@@ -124,8 +145,8 @@ body {
 	background-color: #7e6ace;
 
 	display: grid;
-	width: 90%;
 	border-radius: 20px 20px 0 0;
+	text-align: center;
 }
 
 .footer__social {
@@ -142,20 +163,4 @@ body {
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: 100% bottom;
-}
-
-@media (min-width: 600px) {
-	.cards {
-		grid-template-columns: 1fr 1fr;
-	}
-	.cards__card--big, .cards__header { 
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}
-	.first-screen__table-cell--bg {
-		background: url('./images/undraw_Bitcoin_re_urgq.svg');
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
 }
